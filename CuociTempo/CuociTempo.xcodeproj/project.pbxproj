@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D19B02B0183A636F004EC379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02AF183A636F004EC379 /* Foundation.framework */; };
+		D19B02B2183A636F004EC379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02B1183A636F004EC379 /* CoreGraphics.framework */; };
+		D19B02B4183A636F004EC379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02B3183A636F004EC379 /* UIKit.framework */; };
+		D19B02B6183A636F004EC379 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02B5183A636F004EC379 /* CoreData.framework */; };
+		D19B02BC183A636F004EC379 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D19B02BA183A636F004EC379 /* InfoPlist.strings */; };
+		D19B02BE183A636F004EC379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B02BD183A636F004EC379 /* main.m */; };
+		D19B02C2183A636F004EC379 /* CTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B02C1183A636F004EC379 /* CTAppDelegate.m */; };
+		D19B02C7183A636F004EC379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19B02C6183A636F004EC379 /* Images.xcassets */; };
+		D19B02CE183A636F004EC379 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02CD183A636F004EC379 /* XCTest.framework */; };
+		D19B02CF183A636F004EC379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02AF183A636F004EC379 /* Foundation.framework */; };
+		D19B02D0183A636F004EC379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02B3183A636F004EC379 /* UIKit.framework */; };
+		D19B02D1183A636F004EC379 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B02B5183A636F004EC379 /* CoreData.framework */; };
+		D19B02D9183A636F004EC379 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D19B02D7183A636F004EC379 /* InfoPlist.strings */; };
+		D19B02DB183A636F004EC379 /* CuociTempoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B02DA183A636F004EC379 /* CuociTempoTests.m */; };
+		D19B02E6183A63A6004EC379 /* CuociTempo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D19B02E4183A63A6004EC379 /* CuociTempo.xcdatamodeld */; };
+		D19B02E8183A63C3004EC379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19B02E7183A63C3004EC379 /* MainStoryboard.storyboard */; };
+		D19B02ED183A648D004EC379 /* CTHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B02EC183A648D004EC379 /* CTHomePageViewController.m */; };
+		D19B02F0183A64D9004EC379 /* CTTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B02EF183A64D9004EC379 /* CTTypeViewController.m */; };
+		D19B0306183A675A004EC379 /* win_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F3183A675A004EC379 /* win_1.png */; };
+		D19B0307183A675A004EC379 /* win_10.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F4183A675A004EC379 /* win_10.png */; };
+		D19B0308183A675A004EC379 /* win_11.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F5183A675A004EC379 /* win_11.png */; };
+		D19B0309183A675A004EC379 /* win_12.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F6183A675A004EC379 /* win_12.png */; };
+		D19B030A183A675A004EC379 /* win_13.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F7183A675A004EC379 /* win_13.png */; };
+		D19B030B183A675A004EC379 /* win_14.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F8183A675A004EC379 /* win_14.png */; };
+		D19B030C183A675A004EC379 /* win_15.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02F9183A675A004EC379 /* win_15.png */; };
+		D19B030D183A675A004EC379 /* win_16.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02FA183A675A004EC379 /* win_16.png */; };
+		D19B030E183A675A004EC379 /* win_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02FB183A675A004EC379 /* win_2.png */; };
+		D19B030F183A675A004EC379 /* win_3.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02FC183A675A004EC379 /* win_3.png */; };
+		D19B0310183A675A004EC379 /* win_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02FD183A675A004EC379 /* win_4.png */; };
+		D19B0311183A675A004EC379 /* win_5.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02FE183A675A004EC379 /* win_5.png */; };
+		D19B0312183A675A004EC379 /* win_6.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B02FF183A675A004EC379 /* win_6.png */; };
+		D19B0313183A675A004EC379 /* win_7.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B0300183A675A004EC379 /* win_7.png */; };
+		D19B0314183A675A004EC379 /* win_8.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B0301183A675A004EC379 /* win_8.png */; };
+		D19B0315183A675A004EC379 /* win_9.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B0302183A675A004EC379 /* win_9.png */; };
+		D19B0316183A675A004EC379 /* microonde.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B0303183A675A004EC379 /* microonde.png */; };
+		D19B0317183A675A004EC379 /* normale.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B0304183A675A004EC379 /* normale.png */; };
+		D19B0318183A675A004EC379 /* pressione.png in Resources */ = {isa = PBXBuildFile; fileRef = D19B0305183A675A004EC379 /* pressione.png */; };
+		D19B031D183A69D7004EC379 /* CTPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B031C183A69D7004EC379 /* CTPieViewController.m */; };
+		D19B0321183A6CC0004EC379 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B0320183A6CC0004EC379 /* XYPieChart.m */; };
+		D19B0324183A6F03004EC379 /* GNWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B0323183A6F03004EC379 /* GNWheelView.m */; };
+		D19B0328183A6F9C004EC379 /* GNWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B0327183A6F9C004EC379 /* GNWheelViewController.m */; };
+		D19B032B183A7247004EC379 /* CTTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B032A183A7247004EC379 /* CTTimerViewController.m */; };
+		D19B032D183A7294004EC379 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B032C183A7294004EC379 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D19B02D2183A636F004EC379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19B02A4183A636F004EC379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D19B02AB183A636F004EC379;
+			remoteInfo = CuociTempo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D19B02AC183A636F004EC379 /* CuociTempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuociTempo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19B02AF183A636F004EC379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D19B02B1183A636F004EC379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D19B02B3183A636F004EC379 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D19B02B5183A636F004EC379 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D19B02B9183A636F004EC379 /* CuociTempo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CuociTempo-Info.plist"; sourceTree = "<group>"; };
+		D19B02BB183A636F004EC379 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D19B02BD183A636F004EC379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D19B02BF183A636F004EC379 /* CuociTempo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CuociTempo-Prefix.pch"; sourceTree = "<group>"; };
+		D19B02C0183A636F004EC379 /* CTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTAppDelegate.h; sourceTree = "<group>"; };
+		D19B02C1183A636F004EC379 /* CTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTAppDelegate.m; sourceTree = "<group>"; };
+		D19B02C6183A636F004EC379 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D19B02CC183A636F004EC379 /* CuociTempoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuociTempoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19B02CD183A636F004EC379 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D19B02D6183A636F004EC379 /* CuociTempoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CuociTempoTests-Info.plist"; sourceTree = "<group>"; };
+		D19B02D8183A636F004EC379 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D19B02DA183A636F004EC379 /* CuociTempoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuociTempoTests.m; sourceTree = "<group>"; };
+		D19B02E5183A63A6004EC379 /* CuociTempo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CuociTempo.xcdatamodel; sourceTree = "<group>"; };
+		D19B02E7183A63C3004EC379 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D19B02EB183A648D004EC379 /* CTHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHomePageViewController.h; sourceTree = "<group>"; };
+		D19B02EC183A648D004EC379 /* CTHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHomePageViewController.m; sourceTree = "<group>"; };
+		D19B02EE183A64D9004EC379 /* CTTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTypeViewController.h; sourceTree = "<group>"; };
+		D19B02EF183A64D9004EC379 /* CTTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTypeViewController.m; sourceTree = "<group>"; };
+		D19B02F3183A675A004EC379 /* win_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_1.png; sourceTree = "<group>"; };
+		D19B02F4183A675A004EC379 /* win_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_10.png; sourceTree = "<group>"; };
+		D19B02F5183A675A004EC379 /* win_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_11.png; sourceTree = "<group>"; };
+		D19B02F6183A675A004EC379 /* win_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_12.png; sourceTree = "<group>"; };
+		D19B02F7183A675A004EC379 /* win_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_13.png; sourceTree = "<group>"; };
+		D19B02F8183A675A004EC379 /* win_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_14.png; sourceTree = "<group>"; };
+		D19B02F9183A675A004EC379 /* win_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_15.png; sourceTree = "<group>"; };
+		D19B02FA183A675A004EC379 /* win_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_16.png; sourceTree = "<group>"; };
+		D19B02FB183A675A004EC379 /* win_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_2.png; sourceTree = "<group>"; };
+		D19B02FC183A675A004EC379 /* win_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_3.png; sourceTree = "<group>"; };
+		D19B02FD183A675A004EC379 /* win_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_4.png; sourceTree = "<group>"; };
+		D19B02FE183A675A004EC379 /* win_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_5.png; sourceTree = "<group>"; };
+		D19B02FF183A675A004EC379 /* win_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_6.png; sourceTree = "<group>"; };
+		D19B0300183A675A004EC379 /* win_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_7.png; sourceTree = "<group>"; };
+		D19B0301183A675A004EC379 /* win_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_8.png; sourceTree = "<group>"; };
+		D19B0302183A675A004EC379 /* win_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_9.png; sourceTree = "<group>"; };
+		D19B0303183A675A004EC379 /* microonde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microonde.png; sourceTree = "<group>"; };
+		D19B0304183A675A004EC379 /* normale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normale.png; sourceTree = "<group>"; };
+		D19B0305183A675A004EC379 /* pressione.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pressione.png; sourceTree = "<group>"; };
+		D19B031B183A69D7004EC379 /* CTPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPieViewController.h; sourceTree = "<group>"; };
+		D19B031C183A69D7004EC379 /* CTPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPieViewController.m; sourceTree = "<group>"; };
+		D19B031F183A6CC0004EC379 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		D19B0320183A6CC0004EC379 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		D19B0322183A6F03004EC379 /* GNWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNWheelView.h; sourceTree = "<group>"; };
+		D19B0323183A6F03004EC379 /* GNWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNWheelView.m; sourceTree = "<group>"; };
+		D19B0326183A6F9C004EC379 /* GNWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNWheelViewController.h; sourceTree = "<group>"; };
+		D19B0327183A6F9C004EC379 /* GNWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNWheelViewController.m; sourceTree = "<group>"; };
+		D19B0329183A7247004EC379 /* CTTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTimerViewController.h; sourceTree = "<group>"; };
+		D19B032A183A7247004EC379 /* CTTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTimerViewController.m; sourceTree = "<group>"; };
+		D19B032C183A7294004EC379 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D19B02A9183A636F004EC379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19B032D183A7294004EC379 /* QuartzCore.framework in Frameworks */,
+				D19B02B2183A636F004EC379 /* CoreGraphics.framework in Frameworks */,
+				D19B02B6183A636F004EC379 /* CoreData.framework in Frameworks */,
+				D19B02B4183A636F004EC379 /* UIKit.framework in Frameworks */,
+				D19B02B0183A636F004EC379 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19B02C9183A636F004EC379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19B02CE183A636F004EC379 /* XCTest.framework in Frameworks */,
+				D19B02D1183A636F004EC379 /* CoreData.framework in Frameworks */,
+				D19B02D0183A636F004EC379 /* UIKit.framework in Frameworks */,
+				D19B02CF183A636F004EC379 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D19B02A3183A636F004EC379 = {
+			isa = PBXGroup;
+			children = (
+				D19B02B7183A636F004EC379 /* CuociTempo */,
+				D19B02D4183A636F004EC379 /* CuociTempoTests */,
+				D19B02AE183A636F004EC379 /* Frameworks */,
+				D19B02AD183A636F004EC379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D19B02AD183A636F004EC379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02AC183A636F004EC379 /* CuociTempo.app */,
+				D19B02CC183A636F004EC379 /* CuociTempoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D19B02AE183A636F004EC379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D19B032C183A7294004EC379 /* QuartzCore.framework */,
+				D19B02AF183A636F004EC379 /* Foundation.framework */,
+				D19B02B1183A636F004EC379 /* CoreGraphics.framework */,
+				D19B02B3183A636F004EC379 /* UIKit.framework */,
+				D19B02B5183A636F004EC379 /* CoreData.framework */,
+				D19B02CD183A636F004EC379 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D19B02B7183A636F004EC379 /* CuociTempo */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02C0183A636F004EC379 /* CTAppDelegate.h */,
+				D19B02C1183A636F004EC379 /* CTAppDelegate.m */,
+				D19B02EA183A63FA004EC379 /* Model */,
+				D19B02F1183A64E5004EC379 /* Controller */,
+				D19B02E9183A63DB004EC379 /* Storyboards */,
+				D19B02C6183A636F004EC379 /* Images.xcassets */,
+				D19B031A183A6764004EC379 /* Immagini */,
+				D19B02B8183A636F004EC379 /* Supporting Files */,
+			);
+			path = CuociTempo;
+			sourceTree = "<group>";
+		};
+		D19B02B8183A636F004EC379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02B9183A636F004EC379 /* CuociTempo-Info.plist */,
+				D19B02BA183A636F004EC379 /* InfoPlist.strings */,
+				D19B02BD183A636F004EC379 /* main.m */,
+				D19B02BF183A636F004EC379 /* CuociTempo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D19B02D4183A636F004EC379 /* CuociTempoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02DA183A636F004EC379 /* CuociTempoTests.m */,
+				D19B02D5183A636F004EC379 /* Supporting Files */,
+			);
+			path = CuociTempoTests;
+			sourceTree = "<group>";
+		};
+		D19B02D5183A636F004EC379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02D6183A636F004EC379 /* CuociTempoTests-Info.plist */,
+				D19B02D7183A636F004EC379 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D19B02E9183A63DB004EC379 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02E7183A63C3004EC379 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D19B02EA183A63FA004EC379 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02E4183A63A6004EC379 /* CuociTempo.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D19B02F1183A64E5004EC379 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02EB183A648D004EC379 /* CTHomePageViewController.h */,
+				D19B02EC183A648D004EC379 /* CTHomePageViewController.m */,
+				D19B02EE183A64D9004EC379 /* CTTypeViewController.h */,
+				D19B02EF183A64D9004EC379 /* CTTypeViewController.m */,
+				D19B031E183A6CC0004EC379 /* XYPieChart */,
+				D19B031B183A69D7004EC379 /* CTPieViewController.h */,
+				D19B031C183A69D7004EC379 /* CTPieViewController.m */,
+				D19B0325183A6F07004EC379 /* GNWheelView */,
+				D19B0326183A6F9C004EC379 /* GNWheelViewController.h */,
+				D19B0327183A6F9C004EC379 /* GNWheelViewController.m */,
+				D19B0329183A7247004EC379 /* CTTimerViewController.h */,
+				D19B032A183A7247004EC379 /* CTTimerViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D19B02F2183A675A004EC379 /* animation_images */ = {
+			isa = PBXGroup;
+			children = (
+				D19B02F3183A675A004EC379 /* win_1.png */,
+				D19B02F4183A675A004EC379 /* win_10.png */,
+				D19B02F5183A675A004EC379 /* win_11.png */,
+				D19B02F6183A675A004EC379 /* win_12.png */,
+				D19B02F7183A675A004EC379 /* win_13.png */,
+				D19B02F8183A675A004EC379 /* win_14.png */,
+				D19B02F9183A675A004EC379 /* win_15.png */,
+				D19B02FA183A675A004EC379 /* win_16.png */,
+				D19B02FB183A675A004EC379 /* win_2.png */,
+				D19B02FC183A675A004EC379 /* win_3.png */,
+				D19B02FD183A675A004EC379 /* win_4.png */,
+				D19B02FE183A675A004EC379 /* win_5.png */,
+				D19B02FF183A675A004EC379 /* win_6.png */,
+				D19B0300183A675A004EC379 /* win_7.png */,
+				D19B0301183A675A004EC379 /* win_8.png */,
+				D19B0302183A675A004EC379 /* win_9.png */,
+			);
+			path = animation_images;
+			sourceTree = "<group>";
+		};
+		D19B031A183A6764004EC379 /* Immagini */ = {
+			isa = PBXGroup;
+			children = (
+				D19B0303183A675A004EC379 /* microonde.png */,
+				D19B0304183A675A004EC379 /* normale.png */,
+				D19B0305183A675A004EC379 /* pressione.png */,
+				D19B02F2183A675A004EC379 /* animation_images */,
+			);
+			name = Immagini;
+			sourceTree = "<group>";
+		};
+		D19B031E183A6CC0004EC379 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				D19B031F183A6CC0004EC379 /* XYPieChart.h */,
+				D19B0320183A6CC0004EC379 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
+		D19B0325183A6F07004EC379 /* GNWheelView */ = {
+			isa = PBXGroup;
+			children = (
+				D19B0322183A6F03004EC379 /* GNWheelView.h */,
+				D19B0323183A6F03004EC379 /* GNWheelView.m */,
+			);
+			name = GNWheelView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D19B02AB183A636F004EC379 /* CuociTempo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19B02DE183A636F004EC379 /* Build configuration list for PBXNativeTarget "CuociTempo" */;
+			buildPhases = (
+				D19B02A8183A636F004EC379 /* Sources */,
+				D19B02A9183A636F004EC379 /* Frameworks */,
+				D19B02AA183A636F004EC379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuociTempo;
+			productName = CuociTempo;
+			productReference = D19B02AC183A636F004EC379 /* CuociTempo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D19B02CB183A636F004EC379 /* CuociTempoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19B02E1183A636F004EC379 /* Build configuration list for PBXNativeTarget "CuociTempoTests" */;
+			buildPhases = (
+				D19B02C8183A636F004EC379 /* Sources */,
+				D19B02C9183A636F004EC379 /* Frameworks */,
+				D19B02CA183A636F004EC379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19B02D3183A636F004EC379 /* PBXTargetDependency */,
+			);
+			name = CuociTempoTests;
+			productName = CuociTempoTests;
+			productReference = D19B02CC183A636F004EC379 /* CuociTempoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D19B02A4183A636F004EC379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Michele Navolio";
+				TargetAttributes = {
+					D19B02CB183A636F004EC379 = {
+						TestTargetID = D19B02AB183A636F004EC379;
+					};
+				};
+			};
+			buildConfigurationList = D19B02A7183A636F004EC379 /* Build configuration list for PBXProject "CuociTempo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D19B02A3183A636F004EC379;
+			productRefGroup = D19B02AD183A636F004EC379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D19B02AB183A636F004EC379 /* CuociTempo */,
+				D19B02CB183A636F004EC379 /* CuociTempoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D19B02AA183A636F004EC379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19B030D183A675A004EC379 /* win_16.png in Resources */,
+				D19B02E8183A63C3004EC379 /* MainStoryboard.storyboard in Resources */,
+				D19B02BC183A636F004EC379 /* InfoPlist.strings in Resources */,
+				D19B030C183A675A004EC379 /* win_15.png in Resources */,
+				D19B030B183A675A004EC379 /* win_14.png in Resources */,
+				D19B0308183A675A004EC379 /* win_11.png in Resources */,
+				D19B0307183A675A004EC379 /* win_10.png in Resources */,
+				D19B0313183A675A004EC379 /* win_7.png in Resources */,
+				D19B0318183A675A004EC379 /* pressione.png in Resources */,
+				D19B0316183A675A004EC379 /* microonde.png in Resources */,
+				D19B030E183A675A004EC379 /* win_2.png in Resources */,
+				D19B0306183A675A004EC379 /* win_1.png in Resources */,
+				D19B02C7183A636F004EC379 /* Images.xcassets in Resources */,
+				D19B0311183A675A004EC379 /* win_5.png in Resources */,
+				D19B030F183A675A004EC379 /* win_3.png in Resources */,
+				D19B0317183A675A004EC379 /* normale.png in Resources */,
+				D19B0314183A675A004EC379 /* win_8.png in Resources */,
+				D19B0310183A675A004EC379 /* win_4.png in Resources */,
+				D19B0315183A675A004EC379 /* win_9.png in Resources */,
+				D19B030A183A675A004EC379 /* win_13.png in Resources */,
+				D19B0309183A675A004EC379 /* win_12.png in Resources */,
+				D19B0312183A675A004EC379 /* win_6.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19B02CA183A636F004EC379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19B02D9183A636F004EC379 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D19B02A8183A636F004EC379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19B02F0183A64D9004EC379 /* CTTypeViewController.m in Sources */,
+				D19B02E6183A63A6004EC379 /* CuociTempo.xcdatamodeld in Sources */,
+				D19B0328183A6F9C004EC379 /* GNWheelViewController.m in Sources */,
+				D19B02ED183A648D004EC379 /* CTHomePageViewController.m in Sources */,
+				D19B02BE183A636F004EC379 /* main.m in Sources */,
+				D19B031D183A69D7004EC379 /* CTPieViewController.m in Sources */,
+				D19B0324183A6F03004EC379 /* GNWheelView.m in Sources */,
+				D19B032B183A7247004EC379 /* CTTimerViewController.m in Sources */,
+				D19B0321183A6CC0004EC379 /* XYPieChart.m in Sources */,
+				D19B02C2183A636F004EC379 /* CTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19B02C8183A636F004EC379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19B02DB183A636F004EC379 /* CuociTempoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D19B02D3183A636F004EC379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D19B02AB183A636F004EC379 /* CuociTempo */;
+			targetProxy = D19B02D2183A636F004EC379 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D19B02BA183A636F004EC379 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19B02BB183A636F004EC379 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D19B02D7183A636F004EC379 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19B02D8183A636F004EC379 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D19B02DC183A636F004EC379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D19B02DD183A636F004EC379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D19B02DF183A636F004EC379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuociTempo/CuociTempo-Prefix.pch";
+				INFOPLIST_FILE = "CuociTempo/CuociTempo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D19B02E0183A636F004EC379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuociTempo/CuociTempo-Prefix.pch";
+				INFOPLIST_FILE = "CuociTempo/CuociTempo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D19B02E2183A636F004EC379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CuociTempo.app/CuociTempo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuociTempo/CuociTempo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CuociTempoTests/CuociTempoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D19B02E3183A636F004EC379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CuociTempo.app/CuociTempo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuociTempo/CuociTempo-Prefix.pch";
+				INFOPLIST_FILE = "CuociTempoTests/CuociTempoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D19B02A7183A636F004EC379 /* Build configuration list for PBXProject "CuociTempo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19B02DC183A636F004EC379 /* Debug */,
+				D19B02DD183A636F004EC379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19B02DE183A636F004EC379 /* Build configuration list for PBXNativeTarget "CuociTempo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19B02DF183A636F004EC379 /* Debug */,
+				D19B02E0183A636F004EC379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D19B02E1183A636F004EC379 /* Build configuration list for PBXNativeTarget "CuociTempoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19B02E2183A636F004EC379 /* Debug */,
+				D19B02E3183A636F004EC379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D19B02E4183A63A6004EC379 /* CuociTempo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D19B02E5183A63A6004EC379 /* CuociTempo.xcdatamodel */,
+			);
+			currentVersion = D19B02E5183A63A6004EC379 /* CuociTempo.xcdatamodel */;
+			path = CuociTempo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D19B02A4183A636F004EC379 /* Project object */;
+}

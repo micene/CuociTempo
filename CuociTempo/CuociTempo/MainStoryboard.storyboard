@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rIO-1N-91v">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="m55-Ds-ivV">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="rIO-1N-91v" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OTg-sJ-HNY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3UF-cZ-hAf" kind="relationship" relationship="rootViewController" id="tGb-3k-KWJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDo-If-iaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="138"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="Bjj-vl-qBU">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="mid" doubleSided="YES" id="3UF-cZ-hAf" customClass="CTHomePageViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y50-Xi-y3w"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QpR-2G-ark" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="138"/>
+        </scene>
+        <!--Type View Controller-->
+        <scene sceneID="FF5-QU-JAK">
+            <objects>
+                <viewController storyboardIdentifier="TypeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qWq-QL-3Fj" customClass="CTTypeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZdT-vY-6TQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rmS-Dh-eGh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xIm-gI-1IB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzk-rz-deo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Lm3-tG-rLr" appends="YES" id="ATa-Mq-Rzl"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pressioneImage" destination="Wzk-rz-deo" id="WzX-OK-xzx"/>
+                        <outlet property="pressioneTapGesture" destination="Lm3-tG-rLr" id="v4O-dF-6iV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tak-Yk-VD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Lm3-tG-rLr"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="135"/>
+        </scene>
+        <!--Pie View Controller-->
+        <scene sceneID="vZ9-HB-IYd">
+            <objects>
+                <viewController storyboardIdentifier="PieView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rA4-g9-8MM" customClass="CTPieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ekD-kv-oP0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ytu-YB-fDK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="atT-fd-nXh" customClass="XYPieChart">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jJ-2Y-NzM">
+                                <rect key="frame" x="118" y="355" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pieChartRight" destination="atT-fd-nXh" id="R6H-rt-0CC"/>
+                        <outlet property="selectedSliceLabel" destination="4jJ-2Y-NzM" id="Qmi-gR-gPh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czc-MP-9hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="136"/>
+        </scene>
+        <!--Wheel View Controller-->
+        <scene sceneID="rG5-GT-jPA">
+            <objects>
+                <viewController storyboardIdentifier="WheelView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5q2-Pp-mag" customClass="GNWheelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yVL-K1-wxy"/>
+                        <viewControllerLayoutGuide type="bottom" id="WVD-9X-6wa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a4k-Pn-4Xz" customClass="GNWheelView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndn-Mt-OZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="136"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="PSG-f6-sxP">
+            <objects>
+                <viewController storyboardIdentifier="TimerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dh8-Fs-3WM" customClass="CTTimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ua-iT-hQ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="lVD-IN-oVq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cr2-yY-Cbg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-pQ-Aj0">
+                                <rect key="frame" x="47" y="43" width="226" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CT-EW-vCX">
+                                <rect key="frame" x="47" y="169" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="dh8-Fs-3WM" eventType="touchUpInside" id="e8H-vO-AlG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJB-ve-2JX">
+                                <rect key="frame" x="193" y="169" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="dh8-Fs-3WM" eventType="touchUpInside" id="Bvt-CJ-CwG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="dcP-pQ-Aj0" id="CnM-40-qsE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GX9-Df-BNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="136"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
