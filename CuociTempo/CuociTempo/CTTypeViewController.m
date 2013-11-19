@@ -7,16 +7,16 @@
 //
 
 #import "CTTypeViewController.h"
-#include "CTPieViewController.h"
+#import "CTPieViewController.h"
 
 @interface CTTypeViewController (){
-
-NSMutableArray *imagesArr;
-int currentImage;
-BOOL stopRequested;
-NSTimeInterval duration;
-NSArray *imageNames;
-
+    
+    NSMutableArray *imagesArr;
+    int currentImage;
+    BOOL stopRequested;
+    NSTimeInterval duration;
+    NSArray *imageNames;
+    
 }@end
 
 @implementation CTTypeViewController
@@ -56,6 +56,8 @@ NSArray *imageNames;
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     self.pressioneImage.userInteractionEnabled = YES;
+    currentImage = 0;
+    
 }
 
 -(void) setupTheAnimation {
@@ -63,7 +65,7 @@ NSArray *imageNames;
     self.pressioneImage.userInteractionEnabled = NO;
     
     stopRequested = NO;
-    currentImage = 0;
+    currentImage = 1;
     duration = 1/self.images.count+1;
     NSLog(@"%f",duration);
     [self stepThroughImages];
@@ -75,9 +77,8 @@ NSArray *imageNames;
     
     self.pressioneImage.image = [self.images objectAtIndex: currentImage];
     
-    if (currentImage == self.images.count-1) {
-        currentImage = 0;
-    } else {
+    if (currentImage != self.images.count-1) {
+        
         currentImage++;
         
     }
@@ -102,7 +103,6 @@ NSArray *imageNames;
     NSLog(@"stop");
     
     stopRequested = YES;
-    currentImage = 0;
     
     CTPieViewController *pieView = [self.storyboard instantiateViewControllerWithIdentifier:@"PieView"];
     pieView.title = self.title;

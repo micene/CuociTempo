@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rIO-1N-91v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rIO-1N-91v">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="m55-Ds-ivV">
             <objects>
-                <navigationController definesPresentationContext="YES" id="rIO-1N-91v" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="rIO-1N-91v" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OTg-sJ-HNY">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzk-rz-deo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="60" width="320" height="420"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -60,22 +60,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tak-Yk-VD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Lm3-tG-rLr"/>
             </objects>
-            <point key="canvasLocation" x="664" y="135"/>
+            <point key="canvasLocation" x="662" y="138"/>
         </scene>
         <!--Pie View Controller-->
-        <scene sceneID="vZ9-HB-IYd">
+        <scene sceneID="bvx-WW-EJq">
             <objects>
-                <viewController storyboardIdentifier="PieView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rA4-g9-8MM" customClass="CTPieViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PieView" id="gWV-NN-LYc" customClass="CTPieViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ekD-kv-oP0"/>
-                        <viewControllerLayoutGuide type="bottom" id="ytu-YB-fDK"/>
+                        <viewControllerLayoutGuide type="top" id="Wkv-lV-ClB"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZF-t0-6dq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="atT-fd-nXh" customClass="XYPieChart">
+                    <view key="view" contentMode="scaleToFill" id="2ti-dM-8Rd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jJ-2Y-NzM">
-                                <rect key="frame" x="118" y="355" width="84" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AsS-l2-181" customClass="XYPieChart">
+                                <rect key="frame" x="0.0" y="20" width="320" height="420"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHB-v7-2hq">
+                                <rect key="frame" x="133" y="467" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -85,13 +90,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="pieChartRight" destination="atT-fd-nXh" id="R6H-rt-0CC"/>
-                        <outlet property="selectedSliceLabel" destination="4jJ-2Y-NzM" id="Qmi-gR-gPh"/>
+                        <outlet property="pieChartRight" destination="AsS-l2-181" id="gF0-4o-I40"/>
+                        <outlet property="selectedSliceLabel" destination="aHB-v7-2hq" id="vBt-KQ-Vom"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="czc-MP-9hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-gQ-T0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="136"/>
+            <point key="canvasLocation" x="1089" y="138"/>
         </scene>
         <!--Wheel View Controller-->
         <scene sceneID="rG5-GT-jPA">

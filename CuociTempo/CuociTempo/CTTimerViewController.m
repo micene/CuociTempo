@@ -9,34 +9,41 @@
 #import "CTTimerViewController.h"
 
 @interface CTTimerViewController (){
- 
+    
     int countdown;
     BOOL isRunning;
     
 }
+
 @end
 
 @implementation CTTimerViewController
 
+static bool run;
+
+
 //@synthesize tempo = _tempo;
+
++(BOOL)timerIsRunnig{
+    return run;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     //NSLog(@"peso %i",self.peso);
-  //  NSLog(@"cottura %@",self.cottura);
+    //  NSLog(@"cottura %@",self.cottura);
     
-  //  countdown = self.tempo.time.doubleValue*60;
+    //  countdown = self.tempo.time.doubleValue*60;
     
     countdown = 60;
     
     self.countdownLabel.text = [self formattazioneLabel];
     
-    /*  self.swipeToBack = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(back:)];
-     [self.swipeToBack setDirection:(UISwipeGestureRecognizerDirectionRight)];
-     [self.view addGestureRecognizer:self.swipeToBack];*/
-    
+    for (UIViewController*c in self.navigationController.childViewControllers) {
+        NSLog(@"%@",c.class);
+    }
     
 }
 
@@ -48,12 +55,14 @@
     //Impostiamo su si il booleano isRunning
     isRunning = YES;
     
+    run = YES;
+    
     //Invochiamo il primo tick
-   // [self spin];
+    // [self spin];
     
     //Avviamo la data con il metodo scheduledTimerWithTimeInterval che ogni secondo invoca il metodo tick
     self.theTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(tick) userInfo:nil repeats:YES];
-
+    
 }
 
 - (IBAction)stop:(id)sender {
@@ -64,7 +73,10 @@
     
     //Impostiamo no il boolenao isRunning
     isRunning = NO;
-  //  countdown = self.tempo.time.doubleValue*60;
+    
+    run = NO;
+    
+    //  countdown = self.tempo.time.doubleValue*60;
     countdown = 60;
     
     [self.lancetta.layer removeAllAnimations];
@@ -88,6 +100,8 @@
         
         //Impostiamo no il boolenao isRunning
         isRunning = NO;
+        
+        run = NO;
         
         //Controlliamo se il timer è valido (cioè sta andando) e nel caso lo fermiamo
         if ( [self.theTimer isValid] ) [self.theTimer invalidate];

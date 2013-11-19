@@ -145,16 +145,12 @@
         
     }*/
     
+    CTTimerViewController *timerView;
     
-    if (!self.timerView) {
-       self.timerView = [self.storyboard instantiateViewControllerWithIdentifier:@"TimerView"];
-        [self.navigationController pushViewController:self.timerView animated:NO];
-
-    }else{
-        
-        [self.navigationController pushViewController:self.timerView animated:NO];
-        
-    }
+    if (![CTTimerViewController timerIsRunnig]) {
+        timerView = [self.storyboard instantiateViewControllerWithIdentifier:@"TimerView"];
+        [self.navigationController pushViewController:timerView animated:NO];
+    }else NSLog(@"gia avviato");
     
     
 }

@@ -19,5 +19,6 @@
  
  @property (nonatomic, strong) Tempo *tempo;*/
 
++(BOOL)timerIsRunnig;
 
 @end
